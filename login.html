@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <form id="login_form"  class="form">
+            <h1 class="form_title">Login</h1>
+            <div class="form_message form_message--success"></div>
+
+            <div class="username">
+                <input type="text" class="form_element" id="username" autofocus placeholder="Username">
+                <img src="username.svg"/>
+                <p></p>
+                <div class="input_errorMessage"></div>
+            </div>
+
+            <div class="password">
+                <input type="password" class="password  form_element" placeholder="Password">
+                <img src="password.svg"/>
+                <div class="input_errorMessage"></div>
+            </div>
+            
+            <div class="forgot-remember">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            
+            <input type="submit" class="submit" placeholder="Login">
+
+            <div class="register">
+                <p>Don't have an account? <a href="#" id="linkCreateAccount">Register</a></p>
+            </div>
+        </form>
+        
+        <form id="createAccount_form" class="form hidden">
+            <h1>Create Account</h1>
+            <div class="form_messsage form_message--success"></div>
+
+
+            <div class="username">
+                <input type="email" id="signUpUsername" class=" form_element" autofocus placeholder="Email">
+                <img src="username.svg"/>
+                <div class="input_errorMessage"></div>
+            </div>
+
+            <div class="username">
+                <input type="text" class="username form_element" autofocus placeholder="Username">
+                <img src="username.svg"/>
+                <div class="input_errorMessage"></div>
+            </div>
+
+            <div class="password">
+                <input type="password" class="password form_element" placeholder="Password">
+                <img src="password.svg"/>
+                <div class="input_errorMessage"></div>
+            </div>
+
+            <div class="password">
+                <input type="password" class="password  form_element" placeholder="Confirm Password">
+                <img src="password.svg"/>
+                <div class="input_errorMessage"></div>
+            </div>
+            
+            
+            <input type="submit" class="submit" placeholder="Login">
+
+            <div class="register">
+                <p>Already have an account? <a href="#" id="linkLogin">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

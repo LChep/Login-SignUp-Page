@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    background: url(pexel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #E3ABBB;;
+}
+
+.container{
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 34px;
+
+}
+.form{
+    padding-right: 20px;
+}
+
+.form input{
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    margin: 15px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+form input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+.forgot-remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+
+}
+
+.forgot-remember label{
+    margin-top: -10px;
+}
+
+.forgot-remember a{
+    margin-top: 3px;
+    font-weight: 100;
+}
+
+#username{
+    width: 100%;
+   
+}
+
+#username::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+#password::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.password{
+    width: 100%;
+}
+
+.username, .password{
+    position: relative; 
+}
+.username img{
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    
+}
+
+.password img{
+    position: absolute;
+    top: 25px;
+    right: 0px;
+   
+}
+
+.form .submit{
+    width: 100%;
+    color:  black;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+a{
+    color: #E3ABBB;
+    font-weight: bold; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register{
+    text-align: center;
+   
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hidden{
+    display: none;
+}
+
+.form_message--error{
+    color: #F27405;
+    text-align: center;
+}
+
+.form_message--success{
+    color: #F29F05;
+    text-align: center;
+}
+
+.input_errorMessageBox{
+    border-color:#D93D04;
+    color: #D93D04;
+}
+
+.input_errorMessage{
+    margin: -10px 20px 0px;
+    color: #F27405;
+    font-size: 14px;
+}
+
+.input_errorMessage:nth-last-child(0){
+    margin-bottom: 20px;
+}
+
